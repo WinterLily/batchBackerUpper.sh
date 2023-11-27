@@ -11,15 +11,19 @@ This script is a batch backup tool for Linux systems. It allows you to easily ba
 
 1. Clone or download the backBackerUpper.sh script from [GitHub](https://github.com/WinterLily/batchBackerUpper.sh).
 2. Open a terminal and navigate to the directory where the script is located.
-3. Run the script by executing the following command:
+3. Ensure that the script is executable:    
+    ```
+    chmod +x batchBackerUpper.sh
+    ```
+4. Run the script by executing the following command:
     
     ```
     ./batchBackerUpper.sh
     ```
     
-4. Follow the prompts to enter the source directory, destination directory, and file regex pattern.
-5. Review the list of files to be backed up and confirm the operation.
-6. The script will create backups of the selected files in the specified destination directory with a date suffix appended to the filenames.
+5. Follow the prompts to enter the source directory, destination directory, and file regex pattern.
+6. Review the list of files to be backed up and confirm the operation.
+7. The script will create backups of the selected files in the specified destination directory with a date suffix appended to the filenames.
 
 ## Notes
 
