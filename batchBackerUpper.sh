@@ -49,7 +49,7 @@ read fileRegex
 #
 # Test File Regex
 #
-testFind=$(find . -type f -name "$fileRegex")
+testFind=$(find $sourceDir -type f -name "$fileRegex")
 if [ "$testFind" = "" ]; then
   echo "[!][!] - No files found matching regex, exiting..."
   exit 1
@@ -67,7 +67,7 @@ fi
 # Run backup
 #
 echo "[+] - Backing up files..."
-for file in $(find . -type f -name "$fileRegex")
+for file in $(find $sourceDir -type f -name "$fileRegex")
 do
     dateSuffix=$(date -r $file -u +"%Y%m%d%H%M%S")
     echo "[+][+] - File last modified at: $dateSuffix"
